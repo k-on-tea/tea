@@ -43,14 +43,19 @@
             margin: 0;
             opacity: 0;
         }
+        .panel li{
+            opacity: 0;
+        }
 
         .panel.active {
             flex: 5;
         }
-
+        .panel.active li{
+            opacity: 1;
+        }
         .panel.active h3 {
             opacity: 1;
-            transition: opacity 0.7s ease-in 0.4s;
+            transition: all 0.7s ease-in 0.4s;
         }
 
         @media (max-width: 480px) {
